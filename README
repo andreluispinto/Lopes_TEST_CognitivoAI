@@ -1,0 +1,31 @@
+EXECUÇÃO
+
+1. Faça uma análise exploratória para avaliar a consistência dos dados e identificar possíveis variáveis que impactam na qualidade do vinho.
+
+2. Para a realização deste teste você pode utilizar o software de sua preferência (Python ou R), só pedimos que compartilhe conosco o código fonte (utilizando um repositório git). Além disso, inclua um arquivo README.md onde você deve cobrir as respostas para os 5 pontos abaixo:
+
+RESPOSTAS
+
+a. Como foi a definição da sua estratégia de modelagem?
+Inicialmente analisando o tamanho do dataset e as principais caracterísitcas alvo para a análise de acordo com as instruções da tarefa, decidi por utilizar o Jupyter Notebook e a linguagem Python nas versões 3.7 e 3.8; para isso importei as ferramentas e bibliotecas necessárias para uma análise exploratório bem completa. O que me permite uma flexibilidade para avaliar vários modelos e escolher o que apresentar melhor acurácia para a análise realizada através das bibliotecas de código aberto da scikit-learn para aprendizado de máquina que usa como padrão a linguagem de programação Python.
+
+
+b. Como foi definida a função de custo utilizada?
+A função que chamamos de função custo ou função objetivo que normalmente é representada pela letra L (de “loss”, em inglês). Normalmente é utilizada no caso de regressão linear para minimizar o erro quadrático médio: L=(y−y^)².
+Como foram testados modelo de REGRESSÃO e modelo de ÁRVORE DE DECISÃO e este último apresentou resultado de maior e melhor acurácia, a função custo para as análises efetuadas já encontra-se determinada no modelo aplicado; cabendo-nos avaliar a performance de cada modelo escolhido.
+
+c. Qual foi o critério utilizado na seleção do modelo final?
+Selecionei o modelo baseado em RANDOM FOREST REGRESSOR que apresentou escore maior e erro médio quadrátco igual a zero, além de nos permitir avaliar quais parâmetros nos entrega a melhor performance para o modelo.
+
+
+d. Qual foi o critério utilizado para validação do modelo? Por que escolheu utilizar este método?
+Conforme descrito acima, o modelo RANDOM FOREST REGRESSOR apresentou melhor performance e acurácia baseado no score para os dados de treino e de teste, além de nos permitir encontrar os parámetros para otimizaão da modelo.
+
+
+e. Quais evidências você possui de que seu modelo é suficientemente bom?
+ - A performance dos outputs das previsões avaliadas.
+ - O menor erro médio quadrático apresentado no modelo.
+ - O maior score apresentado em relação aos outros modelos avaliados.
+ 
+ Autor: André Luis M. Pinto
+ 
